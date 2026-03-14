@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Liam Dondisch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">LD</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <p class="hero-eyebrow">Selected Work</p>
+    <h1 class="hero-name">Projects &<br><em>Research</em></h1>
+    <p class="hero-tagline">Data Engineering · Machine Learning · Visualization</p>
+  </section>
+
+  <!-- PROJECTS INTRO -->
+  <section class="section projects-intro">
+    <div class="section-label">Overview</div>
+    <div class="about-main" style="max-width: 760px;">
+      <p>
+        My project work spans data engineering infrastructure, machine learning, and interactive data visualization. I'm interested in building end-to-end systems — from raw data ingestion and pipeline architecture to predictive models and polished visual outputs. Below is a selection of projects from my coursework, internship, and independent work.
+      </p>
+      <p>
+        At GFG Holdings, I work on production-grade systems processing hundreds of thousands of records weekly. In my coursework, I've explored everything from NBA shot prediction to cryptocurrency adoption analytics. Each project has pushed me to think carefully about data quality, model interpretability, and how to communicate results clearly.
+      </p>
+      <p>
+        I work primarily in Python, SQL, and JavaScript, and have built pipelines using n8n, PostgreSQL, and the OpenAI API. I'm always looking to take on problems that sit at the intersection of technical depth and real-world impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECT CARDS -->
+  <section class="section projects-grid-section">
+    <div class="section-label">Work</div>
+    <h2 class="section-heading">What I've built.</h2>
+
+    <div class="projects-grid">
+
+      <!-- GFG -->
+      <div class="project-card featured">
+        <div class="project-card-header">
+          <span class="project-tag">Professional Experience</span>
+        </div>
+        <div class="project-visual gfg-visual">
+          <div class="visual-grid">
+            <div class="vg-item">14 Hotels</div>
+            <div class="vg-item">698K+ Records</div>
+            <div class="vg-item">94 Tables</div>
+            <div class="vg-item">40+ Workflows</div>
+          </div>
+        </div>
+        <h3>Hospitality Analytics Platform</h3>
+        <p class="project-org">GFG Holdings · 2025–Present</p>
+        <p class="project-desc">
+          Designed and built a multi-platform data aggregation system ingesting 1,600+ data points weekly from 14 enterprise hotels. Integrated Google Maps, TripAdvisor, Expedia, and Booking.com APIs into a centralized PostgreSQL database using n8n workflows with custom JavaScript automation.
+        </p>
+        <ul class="project-highlights">
+          <li>Engineered 40+ automated workflows replacing 20+ hours of manual weekly work</li>
+          <li>Built sentiment classification engine with 6-category, 28-subcategory taxonomy</li>
+          <li>Processed 350,000+ review segments using sentence-level boundary parsing</li>
+          <li>Designed custom HTML/PDF dashboards feeding Power BI visualizations</li>
+          <li>Executed data migration from legacy Excel systems to PostgreSQL</li>
+        </ul>
+        <div class="project-stack">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">n8n</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">Power BI</span>
+        </div>
+      </div>
+
+      <!-- NBA -->
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-tag">Machine Learning</span>
+          <span class="project-tag">Class Project</span>
+        </div>
+        <div class="project-visual" style="padding:0; min-height:200px;">
+          <img src="nba-results.png" alt="NBA Models & Results" style="width:100%; height:100%; object-fit:cover; border-radius:4px;" />
+        </div>
+        <h3>NBA 3-PT Shot ML Model</h3>
+        <p class="project-org">DS 3000 · Fall 2025</p>
+        <p class="project-teammates">Group project with Joshua Chan, Jonathan Barrientos &amp; Itai Schwarz</p>
+        <p class="project-desc">
+          A machine learning class project analyzing 45 years of NBA data to investigate the relationship between 3-point shooting and offensive efficiency. Using the NBA API, we built and compared multiple regression models — linear, polynomial, and multi-variable — targeting offensive rating as the outcome variable. The results showed that 3-point efficiency is a stronger predictor than volume, with our best model achieving an R² of 0.654 and MSE of 7.773.
+        </p>
+        <ul class="project-highlights">
+          <li>Pulled and processed 45 years of historical NBA data via nba_api</li>
+          <li>Built and compared 4 regression models across efficiency and volume metrics</li>
+          <li>Best model: R² of 0.654, MSE of 7.773</li>
+          <li>Findings suggest 3PT efficiency matters more than attempts for offensive output</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://docs.google.com/document/d/19BMyeMomTNae2PFuRzDv18aUJFDfTdGhBvILBqHSrJU/edit?usp=sharing" target="_blank" class="btn btn-ghost" style="font-size:11px; padding:10px 18px;">Read Paper →</a>
+        </div>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">pandas</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">NBA API</span>
+          <span class="tag">matplotlib</span>
+        </div>
+      </div>
+
+      <!-- College ROI -->
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-tag">Machine Learning</span>
+          <span class="project-tag">Personal Project</span>
+        </div>
+        <div class="project-visual" style="padding:0; min-height:200px; display:grid; grid-template-columns:1fr 1fr; gap:0;">
+          <img src="roi-earnings.png" alt="College Earnings Predictions vs Actual" style="width:100%; height:100%; object-fit:cover;" />
+          <img src="roi-returns.png" alt="College ROI Predictions vs Actual" style="width:100%; height:100%; object-fit:cover;" />
+        </div>
+        <h3>College ROI Predictor</h3>
+        <p class="project-org">Personal Project · 2025</p>
+        <p class="project-desc">
+          A personal project building two Random Forest regression models to predict graduate earnings and return on investment across 1,000+ U.S. universities using the Department of Education College Scorecard API. The ROI model performed significantly stronger than the earnings model, achieving an R² of 0.875, with cost-based features far outweighing prestige metrics as predictors. Also my first time building a front end to present results.
+        </p>
+        <ul class="project-highlights">
+          <li>Built two separate models: earnings prediction (R² 0.458) and ROI prediction (R² 0.875)</li>
+          <li>Cost and tuition variables outperformed selectivity and prestige as ROI predictors</li>
+          <li>Data sourced from College Scorecard API across 1,000+ institutions</li>
+          <li>First personal project with a front end to display results</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/dondischl12/college-roi-predictor" target="_blank" class="btn btn-ghost" style="font-size:11px; padding:10px 18px;">View on GitHub →</a>
+        </div>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">pandas</span>
+          <span class="tag">Random Forest</span>
+          <span class="tag">College Scorecard API</span>
+        </div>
+      </div>
+
+      <!-- Research Paper -->
+      <div class="project-card">
+        <div class="project-card-header">
+          <span class="project-tag">Published Research</span>
+          <span class="project-tag">2 Citations</span>
+        </div>
+        <div class="project-visual research-visual">
+          <div class="research-badge">
+            <span class="rb-num">JSR</span>
+            <span class="rb-label">Vol. 12 No. 4 · 2023</span>
+          </div>
+        </div>
+        <h3>What Impact Can Financial Engineering Have On Hastening The Transition To Sustainable Energy?</h3>
+        <p class="project-org">Journal of Student Research · Published Nov 2023</p>
+        <p class="project-teammates">Co-authored with Prof. Samuel Montañez, Universidad Panamericana</p>
+        <p class="project-desc">
+          Peer-reviewed research examining how financial engineering can accelerate the global transition to sustainable energy. Analyzed the $2+ trillion green bond market across 65+ countries, with a comparative case study of Mexico's energy policy shifts from 2011 to 2023, demonstrating a strong correlation between market liberalization and green bond issuance growth.
+        </p>
+        <ul class="project-highlights">
+          <li>Quantitative analysis of global green bond issuance trends across 65+ countries</li>
+          <li>Case study of Mexico's energy policy shifts (2011–2023)</li>
+          <li>Demonstrated 81% higher green bond issuances following market liberalization</li>
+          <li>DOI: 10.47611/jsrhs.v12i4.5445 · 2 citations</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://www.jsr.org/hs/index.php/path/article/view/5445" target="_blank" class="btn btn-ghost" style="font-size:11px; padding:10px 18px;">View Publication →</a>
+          <a href="https://www.jsr.org/hs/index.php/path/article/view/5445/2522" target="_blank" class="btn btn-ghost" style="font-size:11px; padding:10px 18px;">Read PDF →</a>
+        </div>
+        <div class="project-stack">
+          <span class="tag">Green Finance</span>
+          <span class="tag">Quantitative Analysis</span>
+          <span class="tag">Policy Research</span>
+          <span class="tag">Green Bonds</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COURSEWORK -->
+  <section class="section coursework">
+    <div class="section-label">Coursework</div>
+    <h3 class="section-heading" style="font-size: 2rem;">Relevant Courses</h3>
+    <div class="course-grid">
+      <div class="course-item">Advanced Programming with Data</div>
+      <div class="course-item">Discrete Structures</div>
+      <div class="course-item">Databases (CS 3200)</div>
+      <div class="course-item">Foundations of Data Science</div>
+      <div class="course-item">Data Visualization (DS 4200)</div>
+      <div class="course-item">Statistics &amp; Research Methods</div>
+      <div class="course-item">Clinical Psychology &amp; Mental Health</div>
+      <div class="course-item">Accounting</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-label">Contact</div>
+    <h2 class="section-heading">Let's build something.</h2>
+    <p class="contact-sub">Open to co-op, internship, and project opportunities. Always happy to connect.</p>
+    <div class="contact-links">
+      <a href="mailto:dondisch.l@northeastern.edu" class="contact-item">
+        <span class="contact-icon">✉</span>
+        <span>dondisch.l@northeastern.edu</span>
+      </a>
+      <a href="https://www.linkedin.com/in/liam-dondisch" target="_blank" class="contact-item">
+        <span class="contact-icon">in</span>
+        <span>linkedin.com/in/liam-dondisch</span>
+      </a>
+      <a href="https://github.com/dondischl12" target="_blank" class="contact-item">
+        <span class="contact-icon">gh</span>
+        <span>github.com/dondischl12</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2025 Liam Dondisch</span>
+    <span>Built with HTML, CSS &amp; caffeine</span>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liam Dondisch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">LD</span>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">About</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Boston, MA &nbsp;·&nbsp; Open to Co-op</p>
+      <h1 class="hero-name">Liam<br><em>Dondisch</em></h1>
+      <p class="hero-tagline">Data Science &amp; Psychology at Northeastern</p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-img-placeholder">
+          <span class="placeholder-initials">LD</span>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3.5</span>
+            <span class="stat-label">GPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">698K+</span>
+            <span class="stat-label">Records Processed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Published Citations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about">
+    <div class="section-label">About Me</div>
+    <div class="about-grid">
+      <div class="about-main">
+        <h2 class="section-heading">Building things with data,<br><em>at the intersection of behavior and systems.</em></h2>
+        <div class="about-body">
+          <p>
+            My name is Liam Dondisch. I am a Mexican-American sophomore at Northeastern University's Khoury College of Computer Science, pursuing a combined major in Data Science and Psychology. I am drawn to telling stories through data to power real business solutions, whether that is building infrastructure from scratch or turning messy datasets into something actionable.
+          </p>
+          <p>
+            I am currently a Junior Analyst at GFG Real Estate Management, where I primarily support the creation of their new data infrastructure. I designed and architected a multi-platform data aggregation system that processes over 1,600 data points weekly across 14 enterprise hotels, pulling from TripAdvisor, Google Maps, Expedia, and Booking.com into a centralized PostgreSQL database with 94 tables and over 698,000 records. I also built a custom sentiment classification engine with a 6-category, 28-subcategory taxonomy that parsed over 350,000 review segments at the sentence level, replacing entirely manual workflows and saving over 20 hours of work weekly.
+          </p>
+          <p>
+            Outside of work and school, I am a Cruz Azul and Green Bay Packers fan, a big Oasis listener, and a fluent Spanish speaker who grew up in Mexico City. I care about building things that are both technically rigorous and genuinely useful.
+          </p>
+          <p>
+            I am currently seeking co-op opportunities in data, whether that is engineering, analytics, or machine learning. Feel free to reach out.
+          </p>
+        </div>
+      </div>
+      <div class="about-sidebar">
+        <div class="sidebar-block">
+          <h4>Education</h4>
+          <p class="sidebar-school">Northeastern University</p>
+          <p class="sidebar-detail">B.S. Data Science &amp; Psychology</p>
+          <p class="sidebar-detail muted">Sept 2024 – May 2028</p>
+          <p class="sidebar-detail muted">GPA: 3.5 · Dean's List</p>
+        </div>
+        <div class="sidebar-block">
+          <h4>Skills</h4>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">n8n</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">D3.js</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">OpenAI API</span>
+            <span class="tag">Git</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <h4>Interests</h4>
+          <ul class="interests-list">
+            <li>⚽ Soccer (Cruz Azul, PL)</li>
+            <li>🎸 Rock Music (Oasis, The Smiths)</li>
+            <li>✈️ Travel (Mexico, Europe)</li>
+            <li>🤖 Automation &amp; AI</li>
+            <li>🍳 Cooking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section class="section experience">
+    <div class="section-label">Experience</div>
+    <h2 class="section-heading">Where I've worked.</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Jul 2025 – Present</span>
+          <span class="timeline-dot"></span>
+        </div>
+        <div class="timeline-content">
+          <h3>Junior Analyst</h3>
+          <p class="timeline-org">GFG Holdings &nbsp;·&nbsp; Miami, FL</p>
+          <p>Architected a multi-platform data aggregation system processing 1,600+ weekly data points across 14 enterprise hotels. Built a rule-based sentiment classification engine parsing 350,000+ review segments, replacing manual workflows entirely.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Jun–Jul 2023 &amp; 2024</span>
+          <span class="timeline-dot"></span>
+        </div>
+        <div class="timeline-content">
+          <h3>Warehouse &amp; Inventory Manager</h3>
+          <p class="timeline-org">WaterStation (Acquired by Culligan Water) &nbsp;·&nbsp; Mexico City</p>
+          <p>Audited 1,500+ active rental units, identifying and recovering 40+ lost units through client verification and warehouse reconciliation, correcting billing discrepancies.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Jan–Nov 2023</span>
+          <span class="timeline-dot"></span>
+        </div>
+        <div class="timeline-content">
+          <h3>Co-Author, Published Research</h3>
+          <p class="timeline-org">Journal of Student Research &nbsp;·&nbsp; 2 Citations</p>
+          <p>Co-authored peer-reviewed paper analyzing green bond markets across 65+ countries. Quantitative analysis of $2+ trillion global green bond market with Prof. Samuel Montañez, Universidad Panamericana.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-label">Contact</div>
+    <h2 class="section-heading">Let's build something.</h2>
+    <p class="contact-sub">Open to co-op, internship, and project opportunities. Always happy to connect.</p>
+    <div class="contact-links">
+      <a href="mailto:dondisch.l@northeastern.edu" class="contact-item">
+        <span class="contact-icon">✉</span>
+        <span>dondisch.l@northeastern.edu</span>
+      </a>
+      <a href="https://www.linkedin.com/in/liam-dondisch" target="_blank" class="contact-item">
+        <span class="contact-icon">in</span>
+        <span>linkedin.com/in/liam-dondisch</span>
+      </a>
+      <a href="https://github.com/dondischl12" target="_blank" class="contact-item">
+        <span class="contact-icon">gh</span>
+        <span>github.com/dondischl12</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2025 Liam Dondisch</span>
+    <span>Built with HTML, CSS &amp; caffeine</span>
+  </footer>
+
+</body>
+</html>
